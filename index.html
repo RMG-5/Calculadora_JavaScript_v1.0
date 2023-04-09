@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<!-- ********** ********** ********** ********** ********** ********** ********** -->
+<!-- ********** ********** ********** ********** ********** ********** ********** -->
+<head>
+    <meta charset="UTF-8" />
+	<meta name="keywords" content="Calculadora, JavaScript, HTML, CSS" />
+    <meta name="description" content="Calculadora Estándar CSS grid & JavaScript - getElementById & onclick" />  
+    <meta name="author" content="Ricardo García - R.M.G." />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Estándar CSS grid & JavaScript - getElementById & onclick</title>
+    <link href="img/logo-r-color.svg" rel="icon" type="image/x-icon" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" /> 
+	<script src="js/script.js"></script>
+</head>
+<!-- ********** ********** ********** ********** ********** ********** ********** -->
+<!-- ********** ********** ********** ********** ********** ********** ********** -->
+<body>	
+    <main class="contenido">
+		<div id="calculadora">
+						
+			<div id="pantalla">
+				<input type="text" class="pantallas" id="pantalla_memoria" readonly>			
+				<input type="text" class="pantallas" id="pantalla_actual" value="0" readonly>
+			</div>	
+			
+			<input type="button" class="adicionales" id="boton_porcentaje" value="%" onclick="porcentaje()">
+			<input type="button" class="adicionales" id="boton_pi" value="π" onclick="valorPI()">			
+			<input type="button" class="adicionales" id="boton_resetear" value="C" onclick="resetear()">
+			<input type="button" class="operadores" id="boton_dividir" value="÷" onclick="dividir()">
+
+			<input type="button" class="adicionales" id="boton_inverso" value="¹/x" onclick="inverso()">
+			<input type="button" class="adicionales" id="boton_cuadrado" value="x²" onclick="cuadrado()">
+			<input type="button" class="adicionales" id="boton_raiz" value="²√" onclick="raiz()">
+			<input type="button" class="operadores" id="boton_multiplicar" value="x" onclick="multiplicar()">	
+
+			<input type="button" class="numeros" id="boton_siete" value="7" onclick="digitar(7)">
+			<input type="button" class="numeros" id="boton_ocho" value="8" onclick="digitar(8)">
+			<input type="button" class="numeros" id="boton_nueve" value="9" onclick="digitar(9)">
+			<input type="button" class="operadores" id="boton_restar" value="-" onclick="restar()">
+
+			<input type="button" class="numeros" id="boton_cuatro" value="4" onclick="digitar(4)">
+			<input type="button" class="numeros" id="boton_cinco" value="5" onclick="digitar(5)">
+			<input type="button" class="numeros" id="boton_seis" value="6" onclick="digitar(6)">				
+			<input type="button" class="operadores" id="boton_sumar" value="+" onclick="sumar()">	
+			
+			<input type="button" class="numeros" id="boton_uno" value="1" onclick="digitar(1)">
+			<input type="button" class="numeros" id="boton_dos" value="2" onclick="digitar(2)">
+			<input type="button" class="numeros" id="boton_tres" value="3" onclick="digitar(3)">
+			
+			<input type="button" class="numeros" id="boton_mas_menos" value="+/-" onclick="signo()">		
+			<input type="button" class="numeros" id="boton_cero" value="0" onclick="digitar(0)">
+			<input type="button" class="numeros" id="boton_punto" value="." onclick="punto()">
+
+			<input type="button" class="operadores" id="boton_igual" value="=" onclick="resultado()">			
+		</div>
+	</main>		
+</body>
+<!-- ********** ********** ********** ********** ********** ********** ********** -->
+<!-- ********** ********** ********** ********** ********** ********** ********** -->
+</html>
